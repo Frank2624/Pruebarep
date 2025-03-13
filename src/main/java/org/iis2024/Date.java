@@ -26,6 +26,10 @@ public class Date {
    *
    * @return The day of the month (1-31).
    */
+  public void methodAddedByOwner ()
+  {
+    System.out.println("Method added by owner");
+  }
   public int getDay() {
     return day;
   }
@@ -61,12 +65,6 @@ public class Date {
     this.month = month;
     this.year = year;
   }
-  public Date(int tag, int monat, int jahr) {
-    this.day = tag;
-    this.month = monat;
-    this.year = jahr;
-  }
-
 
   /**
    * Validates the date according to the predefined rules: the year must be within 1900 to 2050, the
